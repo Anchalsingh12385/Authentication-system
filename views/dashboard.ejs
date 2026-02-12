@@ -7,16 +7,34 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <nav class="navbar">
-   <h2>Dashboard</h2>
-   <a href="/logout" class="logout-btn">Logout</a>
-    </nav>
-    <div class="dashboard-container">
-        <div class ="welcome-message">
-       <h1>Welcome, <%= username %></h1>
-         <p>You have successfully logged in.</p>
-    </div>
-   </div> 
    
+  <div class="dashboard">
+
+    <aside class="sidebar">
+      <h2>MyApp</h2>
+      <ul>
+        <li>Dashboard</li>
+        <li>Profile</li>
+        <li>Settings</li>
+      </ul>
+    </aside>
+
+    <div class="main">
+
+      <nav class="navbar">
+        <h3>Dashboard</h3>
+        <button class="logout">Logout</button>
+      </nav>
+
+      <section class="content">
+        <div class="card">Total Users</div>
+        <div class="card">Revenue</div>
+        <div class="card">Orders</div>
+      </section>
+
+    </div>
+
+  </div>
+
 </body>
 </html>
